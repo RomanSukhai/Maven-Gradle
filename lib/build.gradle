@@ -1,0 +1,17 @@
+
+
+apply plugin :'java-library'
+apply plugin :'war'
+
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	testImplementation 'junit.jupit:4.12'
+	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+	compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+   
+}
+
